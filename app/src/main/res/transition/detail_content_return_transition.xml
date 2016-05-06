@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="@integer/anim_duration_default">
+
+    <fade>
+        <targets>
+            <target android:targetId="@id/ordering" />
+        </targets>
+    </fade>
+    <slide android:slideEdge="bottom">
+        <targets>
+            <target android:targetId="@id/controls" />
+        </targets>
+    </slide>
+
+</transitionSet>

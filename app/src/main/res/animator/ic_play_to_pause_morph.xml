@@ -1,0 +1,6 @@
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="@integer/anim_duration_default"
+    android:propertyName="pathData"
+    android:valueFrom="@string/play_vector_path"
+    android:valueTo="@string/pause_vector_path"
+    android:valueType="pathType" />

@@ -1,0 +1,9 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_play_vector">
+    <target
+        android:name="play"
+        android:animation="@animator/ic_play_to_pause_morph" />
+    <target
+        android:name="rotation"
+        android:animation="@animator/clockwise_rotation" />
+</animated-vector>

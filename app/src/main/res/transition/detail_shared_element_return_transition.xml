@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:duration="@integer/anim_duration_default"
+    android:interpolator="@android:interpolator/accelerate_quad">
+
+    <!--Progress-->
+    <transitionSet>
+        <changeBounds />
+        <changeTransform />
+        <changeClipBounds />
+        <changeImageTransform />
+        <transition
+            class="com.sample.andremion.musicplayer.transition.ProgressViewTransition"
+            app:morph="1" />
+        <targets>
+            <target android:targetId="@id/progress" />
+        </targets>
+    </transitionSet>
+    <!--Cover-->
+    <transitionSet android:startDelay="@integer/anim_duration_short">
+        <changeBounds />
+        <changeTransform />
+        <changeClipBounds />
+        <changeImageTransform />
+        <transition
+            class="com.sample.andremion.musicplayer.transition.CoverViewTransition"
+            app:shape="circle" />
+        <targets>
+            <target android:targetId="@id/cover" />
+        </targets>
+    </transitionSet>
+    <!--Others-->
+    <transitionSet android:startDelay="@integer/anim_duration_default">
+        <changeBounds />
+        <changeTransform />
+        <changeClipBounds />
+        <changeImageTransform />
+    </transitionSet>
+
+</transitionSet>

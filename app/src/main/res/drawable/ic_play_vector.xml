@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportHeight="24"
+    android:viewportWidth="24">
+    <!--<path-->
+    <!--android:fillColor="#FF000000"-->
+    <!--android:pathData="M0,0 h24 v24 h-24z" />-->
+    <group
+        android:name="rotation"
+        android:pivotX="12"
+        android:pivotY="12">
+        <path
+            android:name="play"
+            android:fillColor="@android:color/white"
+            android:pathData="M6,5 l12,7 l0,0 l-12,0z M6,12 l12,0 l0,0 l-12,7z" />
+    </group>
+</vector>

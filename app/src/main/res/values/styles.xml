@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Color palette. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!--Transitions-->
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowSharedElementsUseOverlay">false</item>
+    </style>
+
+    <style name="AppTheme.Main">
+        <item name="android:windowExitTransition">@transition/list_content_exit_transition</item>
+        <item name="android:windowReenterTransition">
+            @transition/list_content_reenter_transition
+        </item>
+        <item name="android:windowSharedElementExitTransition">
+            @transition/list_shared_element_exit_transition
+        </item>
+        <item name="android:windowSharedElementReenterTransition">
+            @transition/list_shared_element_reenter_transition
+        </item>
+        <!--<item name="android:windowAllowReturnTransitionOverlap">false</item>-->
+    </style>
+
+    <style name="AppTheme.Detail">
+        <item name="android:windowEnterTransition">
+            @transition/detail_content_enter_transition
+        </item>
+        <item name="android:windowReturnTransition">
+            @transition/detail_content_return_transition
+        </item>
+        <item name="android:windowSharedElementEnterTransition">
+            @transition/detail_shared_element_enter_transition
+        </item>
+        <item name="android:windowSharedElementReturnTransition">
+            @transition/detail_shared_element_return_transition
+        </item>
+        <!--<item name="android:windowAllowEnterTransitionOverlap">true</item>-->
+    </style>
+
+</resources>
