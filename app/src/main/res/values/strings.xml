@@ -7,7 +7,6 @@
     <string name="transition_name_duration" translatable="false">duration</string>
     <string name="transition_name_progress" translatable="false">progress</string>
     <string name="transition_name_fab" translatable="false">fab</string>
-    <string name="transition_name_overlay" translatable="false">overlay</string>
     <string name="play_vector_path" translatable="false">M6,5 l12,7 l0,0 l-12,0z M6,12 l12,0 l0,0 l-12,7z</string>
     <string name="pause_vector_path" translatable="false">M5,6 l14,0 l0,4 l-14,0z M5,14 l14,0 l0,4 l-14,0z</string>
 </resources>

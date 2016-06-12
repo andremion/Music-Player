@@ -2,7 +2,6 @@
 <resources>
     <color name="colorPrimary">#9E9E9E</color>
     <color name="colorPrimaryDark">#616161</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="colorPane">#33616161</color>
-    <color name="colorOverlay">#33CECECE</color>
+    <color name="colorAccent">#FD4848</color>
+    <color name="colorPane">#33C2CAC9</color>
 </resources>

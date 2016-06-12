@@ -21,7 +21,6 @@ public class MainActivity extends PlayerActivity {
     private View mTimeView;
     private View mDurationView;
     private View mProgressView;
-    private View mOverlayView;
     private View mFabView;
 
     @Override
@@ -35,7 +34,6 @@ public class MainActivity extends PlayerActivity {
         mTimeView = findViewById(R.id.time);
         mDurationView = findViewById(R.id.duration);
         mProgressView = findViewById(R.id.progress);
-        mOverlayView = findViewById(R.id.overlay);
         mFabView = findViewById(R.id.fab);
 
         // Set the recycler adapter
@@ -53,7 +51,6 @@ public class MainActivity extends PlayerActivity {
                 new Pair<>(mTimeView, ViewCompat.getTransitionName(mTimeView)),
                 new Pair<>(mDurationView, ViewCompat.getTransitionName(mDurationView)),
                 new Pair<>(mProgressView, ViewCompat.getTransitionName(mProgressView)),
-                new Pair<>(mOverlayView, ViewCompat.getTransitionName(mOverlayView)),
                 new Pair<>(mFabView, ViewCompat.getTransitionName(mFabView)));
         ActivityCompat.startActivity(this, new Intent(this, DetailActivity.class), options.toBundle());
     }

@@ -3,7 +3,7 @@
     android:duration="@integer/anim_duration_default"
     android:startDelay="@integer/anim_duration_default">
 
-    <fade android:startDelay="@integer/anim_duration_default">
+    <fade>
         <targets>
             <target android:targetId="@id/pane" />
         </targets>
