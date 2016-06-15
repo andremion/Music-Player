@@ -2,12 +2,13 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
-        <!-- Color palette. -->
+        <!-- Color palette-->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <!--Translucent status bar-->
         <item name="android:windowTranslucentStatus">true</item>
-        <!--Transitions-->
+        <!--Activity transitions-->
         <item name="android:windowContentTransitions">true</item>
         <item name="android:windowSharedElementsUseOverlay">false</item>
     </style>
@@ -23,7 +24,6 @@
         <item name="android:windowSharedElementReenterTransition">
             @transition/list_shared_element_reenter_transition
         </item>
-        <!--<item name="android:windowAllowReturnTransitionOverlap">false</item>-->
     </style>
 
     <style name="AppTheme.Detail">
@@ -39,7 +39,6 @@
         <item name="android:windowSharedElementReturnTransition">
             @transition/detail_shared_element_return_transition
         </item>
-        <!--<item name="android:windowAllowEnterTransitionOverlap">true</item>-->
     </style>
 
 </resources>
