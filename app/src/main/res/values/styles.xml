@@ -9,12 +9,13 @@
         <!--Translucent status bar-->
         <item name="android:windowTranslucentStatus">true</item>
         <!--Activity transitions-->
-        <item name="android:windowContentTransitions">true</item>
         <item name="android:windowSharedElementsUseOverlay">false</item>
     </style>
 
     <style name="AppTheme.Main">
-        <item name="android:windowExitTransition">@transition/list_content_exit_transition</item>
+        <item name="android:windowExitTransition">
+            @transition/list_content_exit_transition
+        </item>
         <item name="android:windowReenterTransition">
             @transition/list_content_reenter_transition
         </item>
