@@ -8,11 +8,10 @@
         <item name="colorAccent">@color/colorAccent</item>
         <!--Translucent status bar-->
         <item name="android:windowTranslucentStatus">true</item>
-        <!--Activity transitions-->
-        <item name="android:windowSharedElementsUseOverlay">false</item>
     </style>
 
     <style name="AppTheme.Main">
+        <item name="android:windowSharedElementsUseOverlay">false</item>
         <item name="android:windowExitTransition">
             @transition/list_content_exit_transition
         </item>

@@ -18,13 +18,6 @@
         app:shape="circle"
         app:trackAlpha="255"/>
 
-    <!--<View-->
-        <!--android:id="@+id/pane"-->
-        <!--android:layout_width="0dp"-->
-        <!--android:layout_height="0dp"-->
-        <!--android:transitionName="@string/transition_name_pane"-->
-        <!--android:visibility="invisible"/>-->
-
     <include
         android:id="@+id/title"
         layout="@layout/track_title"

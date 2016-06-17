@@ -3,9 +3,6 @@
     android:height="24dp"
     android:viewportHeight="24"
     android:viewportWidth="24">
-    <!--<path-->
-    <!--android:fillColor="#FF000000"-->
-    <!--android:pathData="M0,0 h24 v24 h-24z" />-->
     <group
         android:name="rotation"
         android:pivotX="12"
@@ -14,7 +11,6 @@
         <path
             android:name="pause"
             android:fillColor="@android:color/white"
-            android:pathData="M5,6 l14,0 l0,4 l-14,0z M5,14 l14,0 l0,4 l-14,0z" />
-        <!--android:pathData="M6,19 h4 V5 H6 v14z m8,-14 v14 h4 V5 h-4z"/>-->
+            android:pathData="@string/pause_vector_path" />
     </group>
 </vector>

@@ -16,11 +16,9 @@ import java.util.List;
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
 
     private final List<MusicItem> mValues;
-    private final OnTrackInteractionListener mListener;
 
-    public RecyclerViewAdapter(List<MusicItem> items, OnTrackInteractionListener listener) {
+    public RecyclerViewAdapter(List<MusicItem> items) {
         mValues = items;
-        mListener = listener;
     }
 
     @Override
@@ -41,11 +39,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (null != mListener) {
-                    // Notify the active callbacks interface (the activity, if the
-                    // fragment is attached to one) that an item has been selected.
-                    mListener.onTrackItemClick(holder.mItem);
-                }
+                // Nothing to do
             }
         });
     }
@@ -53,10 +47,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public int getItemCount() {
         return mValues.size();
-    }
-
-    public interface OnTrackInteractionListener {
-        void onTrackItemClick(MusicItem item);
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
