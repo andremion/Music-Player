@@ -10,9 +10,9 @@
 
 ![Icon](https://raw.githubusercontent.com/andremion/Music-Player/master/app/src/main/res/mipmap-hdpi/ic_launcher.png)
 
-Read the complete post at https://medium.com/@andremion/music-player-3a85864d6df7#.iklz50r6n
+Read step by step how it was made at https://medium.com/@andremion/music-player-3a85864d6df7#.iklz50r6n
 
-## License
+### License
 
     Copyright 2016 André Mion
 
