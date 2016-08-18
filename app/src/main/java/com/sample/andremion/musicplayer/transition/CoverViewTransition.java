@@ -114,13 +114,13 @@ public class CoverViewTransition extends Transition {
         if (mShape == CoverView.SHAPE_RECTANGLE) {
             startRadius = maxRadius;
             endRadius = minRadius;
-            startTrackAlpha = CoverView.TACK_ALPHA_TRANSPARENT;
-            endTrackAlpha = CoverView.TACK_ALPHA_OPAQUE;
+            startTrackAlpha = CoverView.TRACK_ALPHA_TRANSPARENT;
+            endTrackAlpha = CoverView.TRACK_ALPHA_OPAQUE;
         } else {
             startRadius = minRadius;
             endRadius = maxRadius;
-            startTrackAlpha = CoverView.TACK_ALPHA_OPAQUE;
-            endTrackAlpha = CoverView.TACK_ALPHA_TRANSPARENT;
+            startTrackAlpha = CoverView.TRACK_ALPHA_OPAQUE;
+            endTrackAlpha = CoverView.TRACK_ALPHA_TRANSPARENT;
         }
 
         List<Animator> animatorList = new ArrayList<>();

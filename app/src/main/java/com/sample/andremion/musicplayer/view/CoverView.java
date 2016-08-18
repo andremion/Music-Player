@@ -40,8 +40,8 @@ public class CoverView extends ImageView implements Animatable {
 
     public static final int SHAPE_RECTANGLE = 0;
     public static final int SHAPE_CIRCLE = 1;
-    public static final int TACK_ALPHA_TRANSPARENT = 0;
-    public static final int TACK_ALPHA_OPAQUE = 255;
+    public static final int TRACK_ALPHA_TRANSPARENT = 0;
+    public static final int TRACK_ALPHA_OPAQUE = 255;
 
     private static final float TRACK_SIZE = 10;
     private static final float TRACK_WIDTH = 1;
@@ -49,7 +49,7 @@ public class CoverView extends ImageView implements Animatable {
 
     private static final float FULL_ANGLE = 360;
     private static final float HALF_ANGLE = FULL_ANGLE / 2;
-    private static final int DURATION = 3000;
+    private static final int DURATION = 2500;
     private static final float DURATION_PER_DEGREES = DURATION / FULL_ANGLE;
 
     private final ValueAnimator mStartAnimator;
@@ -117,10 +117,14 @@ public class CoverView extends ImageView implements Animatable {
 
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CoverView);
         int shape = a.getInt(R.styleable.CoverView_shape, SHAPE_RECTANGLE);
-        int alpha = a.getInt(R.styleable.CoverView_trackAlpha, TACK_ALPHA_TRANSPARENT);
+        int alpha = a.getInt(R.styleable.CoverView_trackAlpha, TRACK_ALPHA_TRANSPARENT);
         mShape = shape;
-        mTrackPaint.setAlpha(alpha * mTrackAlpha / TACK_ALPHA_OPAQUE);
+        mTrackPaint.setAlpha(alpha * mTrackAlpha / TRACK_ALPHA_OPAQUE);
         a.recycle();
+    }
+
+    public void setCallbacks(Callbacks callbacks) {
+        mCallbacks = callbacks;
     }
 
     public void setShape(int shape) {
@@ -128,6 +132,9 @@ public class CoverView extends ImageView implements Animatable {
             mShape = shape;
             // Invalidate the radius value
             mRadius = 0;
+            if (!isInLayout() && !isLayoutRequested()) {
+                invalidatePaths();
+            }
         }
     }
 
@@ -138,53 +145,37 @@ public class CoverView extends ImageView implements Animatable {
     public void setTransitionRadius(float radius) {
         if (radius != mRadius) {
             mRadius = radius;
-            final int w = getWidth();
-            final int h = getHeight();
-            final float centerX = w / 2f;
-            final float centerY = h / 2f;
-            mClipPath.reset();
-            mClipPath.addCircle(centerX, centerY, mRadius, Path.Direction.CW);
+            invalidatePaths();
             invalidate();
         }
     }
 
     public int getTrackAlpha() {
-        return mTrackPaint.getAlpha() * TACK_ALPHA_OPAQUE / mTrackAlpha;
+        return mTrackPaint.getAlpha() * TRACK_ALPHA_OPAQUE / mTrackAlpha;
     }
 
     public void setTrackAlpha(int alpha) {
         if (alpha != getTrackAlpha()) {
-            mTrackPaint.setAlpha(alpha * mTrackAlpha / TACK_ALPHA_OPAQUE);
+            mTrackPaint.setAlpha(alpha * mTrackAlpha / TRACK_ALPHA_OPAQUE);
             invalidate();
         }
     }
 
     public float getMinRadius() {
-        final int w = getMeasuredWidth();
-        final int h = getMeasuredHeight();
+        final int w = getWidth();
+        final int h = getHeight();
         return Math.min(w, h) / 2f;
     }
 
     public float getMaxRadius() {
-        final int w = getMeasuredWidth();
-        final int h = getMeasuredHeight();
+        final int w = getWidth();
+        final int h = getHeight();
         return (float) Math.hypot(w / 2f, h / 2f);
-    }
-
-    public void setCallbacks(Callbacks callbacks) {
-        mCallbacks = callbacks;
     }
 
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
-
-        mRectPath.reset();
-        mRectPath.addRect(0, 0, w, h, Path.Direction.CW);
-
-        final float centerX = w / 2f;
-        final float centerY = h / 2f;
-
         if (mRadius == 0) {
             if (SHAPE_CIRCLE == mShape) {
                 mRadius = getMinRadius();
@@ -192,48 +183,56 @@ public class CoverView extends ImageView implements Animatable {
                 mRadius = getMaxRadius();
             }
         }
+        invalidatePaths();
+    }
+
+    private void invalidatePaths() {
+
+        final int w = getWidth();
+        final int h = getHeight();
+        final float centerX = w / 2f;
+        final float centerY = h / 2f;
 
         mClipPath.reset();
         mClipPath.addCircle(centerX, centerY, mRadius, Path.Direction.CW);
 
         final int trackRadius = Math.min(w, h);
         final int trackCount = (int) (trackRadius / mTrackSize);
+
         mTrackPath.reset();
         for (int i = 1; i < trackCount - 2; i++) {
             mTrackPath.addCircle(centerX, centerY, trackRadius * (i / (float) trackCount), Path.Direction.CW);
         }
+
+        mRectPath.reset();
+        mRectPath.addRect(0, 0, w, h, Path.Direction.CW);
+
         if (!isInEditMode()) {
             mTrackPath.op(mRectPath, Path.Op.INTERSECT);
         }
-
-    }
-
-    @Override
-    public void draw(Canvas canvas) {
-        // Clip before any draw operation
-        canvas.clipPath(mClipPath);
-        super.draw(canvas);
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
+        canvas.clipPath(mClipPath);
         super.onDraw(canvas);
         canvas.drawPath(mTrackPath, mTrackPaint);
     }
 
     @Override
     public void start() {
-        mStartAnimator.start();
+        if (mShape == SHAPE_RECTANGLE) {
+            return;
+        }
+        if (!isRunning()) {
+            mStartAnimator.start();
+        }
     }
 
     @Override
     public void stop() {
         if (isRunning()) {
             mStartAnimator.cancel();
-        } else {
-            if (mCallbacks != null) {
-                mCallbacks.onStopAnimation();
-            }
         }
     }
 
