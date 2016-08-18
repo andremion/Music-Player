@@ -27,6 +27,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.drawable.Animatable;
+import android.os.Build;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.Animation;
@@ -74,6 +75,11 @@ public class CoverView extends ImageView implements Animatable {
 
     public CoverView(Context context, AttributeSet attrs, final int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+
+        // TODO: Canvas.clipPath works wrong when running with hardware acceleration in Android N
+        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.M) {
+            setLayerType(View.LAYER_TYPE_HARDWARE, null);
+        }
 
         final float density = getResources().getDisplayMetrics().density;
         mTrackAlpha = Color.alpha(TRACK_COLOR);
