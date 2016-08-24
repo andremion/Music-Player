@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
 
-    <com.sample.andremion.musicplayer.view.CoverView
+    <com.andremion.music.MusicCoverView
         android:id="@+id/cover"
         android:layout_width="match_parent"
         android:layout_centerInParent="true"
@@ -15,8 +15,7 @@
         android:src="@drawable/album_cover_daft_punk"
         android:transitionName="@string/transition_name_cover"
         app:layout_heightPercent="35%"
-        app:shape="circle"
-        app:trackAlpha="255"/>
+        app:shape="circle" />
 
     <include
         android:id="@+id/title"

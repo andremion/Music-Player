@@ -20,12 +20,13 @@ android {
 }
 
 final APPCOMPAT_VERSION = '24.2.0'
+final MUSICCOVERVIEW_VERSION = '1.0.0'
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    testCompile 'junit:junit:4.12'
     compile "com.android.support:design:$APPCOMPAT_VERSION"
     compile "com.android.support:recyclerview-v7:$APPCOMPAT_VERSION"
     compile "com.android.support:percent:$APPCOMPAT_VERSION"
-    compile "com.android.support:support-v4:$APPCOMPAT_VERSION"
+    compile "com.github.andremion:musiccoverview:$MUSICCOVERVIEW_VERSION"
+    testCompile 'junit:junit:4.12'
 }

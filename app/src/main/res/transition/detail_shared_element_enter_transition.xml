@@ -6,7 +6,7 @@
     <!--Progress-->
     <transition class="com.sample.andremion.musicplayer.transition.ProgressViewTransition" />
     <!--Cover-->
-    <transition class="com.sample.andremion.musicplayer.transition.CoverViewTransition" />
+    <transition class="com.andremion.music.MusicCoverViewTransition" />
     <!--Others-->
     <transitionSet>
         <changeBounds />

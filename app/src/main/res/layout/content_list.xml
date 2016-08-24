@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
 
-    <com.sample.andremion.musicplayer.view.CoverView
+    <com.andremion.music.MusicCoverView
         android:id="@+id/cover"
         android:layout_width="match_parent"
         android:scaleType="centerCrop"

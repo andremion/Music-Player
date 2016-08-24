@@ -24,7 +24,7 @@
         <changeClipBounds />
         <changeImageTransform />
         <transition
-            class="com.sample.andremion.musicplayer.transition.CoverViewTransition"
+            class="com.andremion.music.MusicCoverViewTransition"
             app:shape="circle" />
         <targets>
             <target android:targetId="@id/cover" />
