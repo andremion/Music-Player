@@ -13,6 +13,8 @@
 
 Read step by step how it was made at https://medium.com/@andremion/music-player-3a85864d6df7#.iklz50r6n
 
+Try the demo [here](https://appetize.io/app/rh7pw9njk2pbw0gvchh0pjbcfg)
+
 ## Libraries and tools used in the project
 
 * [Design Support Library](http://developer.android.com/intl/pt-br/tools/support-library/features.html#design)
