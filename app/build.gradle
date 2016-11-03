@@ -19,7 +19,7 @@ android {
     }
 }
 
-final APPCOMPAT_VERSION = '24.2.0'
+final APPCOMPAT_VERSION = '24.2.1'
 final MUSICCOVERVIEW_VERSION = '1.0.0'
 
 dependencies {
