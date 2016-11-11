@@ -1,8 +1,11 @@
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Music--Player-green.svg?style=true)](https://android-arsenal.com/details/3/3855)
 [![License Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=true)](http://www.apache.org/licenses/LICENSE-2.0)
 ![minSdkVersion 21](https://img.shields.io/badge/minSdkVersion-21-red.svg?style=true)
 ![compileSdkVersion 24](https://img.shields.io/badge/compileSdkVersion-24-yellow.svg?style=true)
+
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Music--Player-green.svg?style=true)](https://android-arsenal.com/details/3/3855)
 [![Android Sweets #27](https://img.shields.io/badge/Android%20Sweets-%2327-ff69b4.svg?style=true)](https://androidsweets.ongoodbits.com/2016/07/14/issue-27)
+[![Awesome Android #22](https://img.shields.io/badge/Awesome%20Android-%2322-green.svg?style=true)](https://android.libhunt.com/newsletter/22)
+
 # Music Player: From UI Proposal to Code
 
 [Transition](https://dribbble.com/shots/1850527-Music-Player-Transition) by [Anish Chandran](https://dribbble.com/anish_chandran) | Code by [André Mion](https://github.com/andremion)
