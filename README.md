@@ -3,7 +3,7 @@
 ![compileSdkVersion 24](https://img.shields.io/badge/compileSdkVersion-24-yellow.svg?style=true)
 
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Music--Player-green.svg?style=true)](https://android-arsenal.com/details/3/3855)
-[![MaterialUp](https://img.shields.io/badge/MaterialUp-Music--Player-blue.svg?style=true)](https://www.uplabs.com/posts/music-player-open-source-apps)
+[![MaterialUp Music-Player](https://img.shields.io/badge/MaterialUp-Music--Player-blue.svg?style=true)](https://www.uplabs.com/posts/music-player-open-source-apps)
 [![Android Sweets #27](https://img.shields.io/badge/Android%20Sweets-%2327-ff69b4.svg?style=true)](https://androidsweets.ongoodbits.com/2016/07/14/issue-27)
 [![Awesome Android #22](https://img.shields.io/badge/Awesome%20Android-%2322-green.svg?style=true)](https://android.libhunt.com/newsletter/22)
 
