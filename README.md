@@ -7,17 +7,21 @@
 [![Android Sweets #27](https://img.shields.io/badge/Android%20Sweets-%2327-ff69b4.svg?style=true)](https://androidsweets.ongoodbits.com/2016/07/14/issue-27)
 [![Awesome Android #22](https://img.shields.io/badge/Awesome%20Android-%2322-green.svg?style=true)](https://android.libhunt.com/newsletter/22)
 
+![Icon](https://raw.githubusercontent.com/andremion/Music-Player/master/app/src/main/res/mipmap-hdpi/ic_launcher.png)
+
 # Music Player: From UI Proposal to Code
+
+Some developers have difficult to code when the UI proposal is a bit “sophisticated” or “complex”. Many of them strip a lot of significant portion of the UI or even the Motion when they are coding, and the result ends up quite different of the original proposal.
+
+This article talks about how would be to code an UI proposal, skipping some basic Android details and focusing in the transition and animation approach...
+
+Read more at https://medium.com/@andremion/music-player-3a85864d6df7#.iklz50r6n
 
 [Transition](https://dribbble.com/shots/1850527-Music-Player-Transition) by [Anish Chandran](https://dribbble.com/anish_chandran) | Code by [André Mion](https://github.com/andremion)
 --- | --- | ---
 ![Transition by Anish Chandran](https://raw.githubusercontent.com/andremion/Music-Player/master/art/music_player_concept_cropped.gif) | ![Code by André Mion](https://raw.githubusercontent.com/andremion/Music-Player/master/art/music_player_code.gif)
 
-![Icon](https://raw.githubusercontent.com/andremion/Music-Player/master/app/src/main/res/mipmap-hdpi/ic_launcher.png)
-
-Read step by step how it was made at https://medium.com/@andremion/music-player-3a85864d6df7#.iklz50r6n
-
-Try the demo [here](https://appetize.io/app/rh7pw9njk2pbw0gvchh0pjbcfg)
+[![Get it on Google Play](https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.sample.andremion.musicplayer)
 
 ## Libraries and tools used in the project
 
