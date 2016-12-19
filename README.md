@@ -21,7 +21,7 @@ Read more at https://medium.com/@andremion/music-player-3a85864d6df7#.iklz50r6n
 --- | --- | ---
 ![Transition by Anish Chandran](https://raw.githubusercontent.com/andremion/Music-Player/master/art/music_player_concept_cropped.gif) | ![Code by André Mion](https://raw.githubusercontent.com/andremion/Music-Player/master/art/music_player_code.gif)
 
-[![Get it on Google Play](https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.sample.andremion.musicplayer)
+[![Get it on Google Play](https://developer.android.com/images/brand/en_generic_rgb_wo_60.png)](https://play.google.com/store/apps/details?id=com.sample.andremion.musicplayer)
 
 ## Libraries and tools used in the project
 
