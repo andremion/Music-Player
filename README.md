@@ -13,7 +13,7 @@
 
 Some developers have difficult to code when the UI proposal is a bit “sophisticated” or “complex”. Many of them strip a lot of significant portion of the UI or even the Motion when they are coding, and the result ends up quite different of the original proposal.
 
-This article talks about how would be to code an UI proposal, skipping some basic Android details and focusing in the transition and animation approach...
+This article talks about how would be to code an UI proposal, skipping some basic Android details and focusing on transition and animation approach...
 
 Read more at https://medium.com/@andremion/music-player-3a85864d6df7#.iklz50r6n
 
