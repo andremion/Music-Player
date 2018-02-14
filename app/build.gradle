@@ -1,13 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion "23.0.3"
+    compileSdkVersion 27
 
     defaultConfig {
         applicationId "com.sample.andremion.musicplayer"
         minSdkVersion 21
-        targetSdkVersion 24
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
     }
@@ -19,7 +18,7 @@ android {
     }
 }
 
-final APPCOMPAT_VERSION = '24.2.1'
+final APPCOMPAT_VERSION = '27.0.2'
 final MUSICCOVERVIEW_VERSION = '1.0.0'
 
 dependencies {
