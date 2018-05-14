@@ -7,7 +7,7 @@
 [![Android Sweets #27](https://img.shields.io/badge/Android%20Sweets-%2327-ff69b4.svg?style=true)](https://androidsweets.ongoodbits.com/2016/07/14/issue-27)
 [![Awesome Android #22](https://img.shields.io/badge/Awesome%20Android-%2322-green.svg?style=true)](https://android.libhunt.com/newsletter/22)
 
-<p align="center"><img src="app/src/main/res/logo-mipmap-xxxhdpi/ic_launcher.png" alt="Music Player" height="200px"></p>
+![Icon](https://raw.githubusercontent.com/andremion/Music-Player/master/app/src/main/res/mipmap-hdpi/ic_launcher.png)
 
 # Music Player: From UI Proposal to Code
 
