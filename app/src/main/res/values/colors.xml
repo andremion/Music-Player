@@ -4,4 +4,5 @@
     <color name="colorPrimaryDark">#616161</color>
     <color name="colorAccent">#FD4848</color>
     <color name="colorPane">#33C2CAC9</color>
+    <color name="colorIconLauncherBackground">#FFFFFF</color>
 </resources>
