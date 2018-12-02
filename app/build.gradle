@@ -1,31 +1,45 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
 
     defaultConfig {
         applicationId "com.sample.andremion.musicplayer"
         minSdkVersion 21
-        targetSdkVersion 27
+        targetSdkVersion 28
         versionCode 3
         versionName "1.0.2"
     }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    compileOptions {
+        encoding = 'UTF-8'
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
-final APPCOMPAT_VERSION = '27.1.1'
-final MUSICCOVERVIEW_VERSION = '1.0.0'
+ext {
+    supportLib = '28.0.0'
+}
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation "com.android.support:design:$APPCOMPAT_VERSION"
-    implementation "com.android.support:recyclerview-v7:$APPCOMPAT_VERSION"
-    implementation "com.android.support:percent:$APPCOMPAT_VERSION"
-    implementation "com.github.andremion:musiccoverview:$MUSICCOVERVIEW_VERSION"
+    implementation "com.android.support:design:${supportLib}"
+    implementation "com.android.support:support-v4:${supportLib}"
+    implementation "com.android.support:appcompat-v7:${supportLib}"
+    implementation "com.android.support:recyclerview-v7:${supportLib}"
+    implementation "com.android.support:percent:${supportLib}"
+
+    implementation 'com.github.andremion:musiccoverview:1.0.0'
+
     testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
 }
