@@ -113,7 +113,7 @@
 
     </RelativeLayout>
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/tracks"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -121,7 +121,7 @@
         app:layoutManager="LinearLayoutManager"
         tools:listitem="@layout/content_list_item" />
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -20,12 +20,12 @@ import android.animation.Animator;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.drawable.AnimatedVectorDrawable;
-import android.support.design.widget.FloatingActionButton;
 import android.transition.Transition;
 import android.transition.TransitionValues;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.sample.andremion.musicplayer.R;
 
 public class PlayButtonTransition extends Transition {

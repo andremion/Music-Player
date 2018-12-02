@@ -17,11 +17,12 @@
 package com.sample.andremion.musicplayer.view;
 
 import android.content.Context;
-import android.support.percent.PercentRelativeLayout;
-import android.support.v4.view.ViewCompat;
-import android.support.v4.view.WindowInsetsCompat;
 import android.util.AttributeSet;
 import android.view.View;
+
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+import androidx.percentlayout.widget.PercentRelativeLayout;
 
 public class InsetsPercentRelativeLayout extends PercentRelativeLayout {
 

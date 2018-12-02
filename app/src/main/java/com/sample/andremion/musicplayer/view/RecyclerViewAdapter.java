@@ -16,7 +16,6 @@
 
 package com.sample.andremion.musicplayer.view;
 
-import android.support.v7.widget.RecyclerView;
 import android.text.format.DateUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,6 +27,8 @@ import com.sample.andremion.musicplayer.R;
 import com.sample.andremion.musicplayer.music.MusicContent.MusicItem;
 
 import java.util.List;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
 
