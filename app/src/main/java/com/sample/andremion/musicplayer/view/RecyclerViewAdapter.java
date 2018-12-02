@@ -52,11 +52,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.mArtistView.setText(holder.mItem.getArtist());
         holder.mDurationView.setText(DateUtils.formatElapsedTime(holder.mItem.getDuration()));
 
-        holder.mView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Nothing to do
-            }
+        holder.mView.setOnClickListener(v -> {
+            // Nothing to do
         });
     }
 
@@ -76,10 +73,10 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         public ViewHolder(View view) {
             super(view);
             mView = view;
-            mCoverView = (ImageView) view.findViewById(R.id.cover);
-            mTitleView = (TextView) view.findViewById(R.id.title);
-            mArtistView = (TextView) view.findViewById(R.id.artist);
-            mDurationView = (TextView) view.findViewById(R.id.duration);
+            mCoverView = view.findViewById(R.id.cover);
+            mTitleView = view.findViewById(R.id.title);
+            mArtistView = view.findViewById(R.id.artist);
+            mDurationView = view.findViewById(R.id.duration);
         }
     }
 

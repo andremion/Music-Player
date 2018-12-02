@@ -94,9 +94,9 @@ public abstract class PlayerActivity extends AppCompatActivity {
     @Override
     public void setContentView(@LayoutRes int layoutResID) {
         super.setContentView(layoutResID);
-        mTimeView = (TextView) findViewById(R.id.time);
-        mDurationView = (TextView) findViewById(R.id.duration);
-        mProgressView = (ProgressView) findViewById(R.id.progress);
+        mTimeView = findViewById(R.id.time);
+        mDurationView = findViewById(R.id.duration);
+        mProgressView = findViewById(R.id.progress);
     }
 
     @Override

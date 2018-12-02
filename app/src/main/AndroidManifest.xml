@@ -20,6 +20,7 @@
         <activity
             android:name=".activities.DetailActivity"
             android:theme="@style/AppTheme.Detail">
+
         </activity>
 
         <service

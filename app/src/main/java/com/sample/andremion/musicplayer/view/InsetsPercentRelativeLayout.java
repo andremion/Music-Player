@@ -35,12 +35,9 @@ public class InsetsPercentRelativeLayout extends PercentRelativeLayout {
 
     public InsetsPercentRelativeLayout(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-        ViewCompat.setOnApplyWindowInsetsListener(this, new android.support.v4.view.OnApplyWindowInsetsListener() {
-            @Override
-            public WindowInsetsCompat onApplyWindowInsets(View v, WindowInsetsCompat insets) {
-                setWindowInsets(insets);
-                return insets.consumeSystemWindowInsets();
-            }
+        ViewCompat.setOnApplyWindowInsetsListener(this, (v, insets) -> {
+            setWindowInsets(insets);
+            return insets.consumeSystemWindowInsets();
         });
     }
 

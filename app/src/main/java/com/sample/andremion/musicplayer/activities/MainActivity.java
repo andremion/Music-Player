@@ -53,7 +53,7 @@ public class MainActivity extends PlayerActivity {
         mFabView = findViewById(R.id.fab);
 
         // Set the recycler adapter
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.tracks);
+        RecyclerView recyclerView = findViewById(R.id.tracks);
         assert recyclerView != null;
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new RecyclerViewAdapter(MusicContent.ITEMS));

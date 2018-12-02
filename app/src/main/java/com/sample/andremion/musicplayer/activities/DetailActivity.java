@@ -33,7 +33,7 @@ public class DetailActivity extends PlayerActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_detail);
 
-        mCoverView = (MusicCoverView) findViewById(R.id.cover);
+        mCoverView = findViewById(R.id.cover);
         mCoverView.setCallbacks(new MusicCoverView.Callbacks() {
             @Override
             public void onMorphEnd(MusicCoverView coverView) {
