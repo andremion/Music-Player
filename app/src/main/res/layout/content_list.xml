@@ -109,7 +109,7 @@
             android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
             android:focusable="true"
-            android:src="@drawable/ic_more_vert_white_24dp" />
+            app:srcCompat="@drawable/ic_more_vert_white_24dp" />
 
     </RelativeLayout>
 

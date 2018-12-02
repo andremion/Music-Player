@@ -83,7 +83,7 @@
             android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
             android:focusable="true"
-            android:src="@drawable/ic_repeat_white_24dp" />
+            app:srcCompat="@drawable/ic_repeat_white_24dp" />
 
         <Space
             android:layout_width="@dimen/activity_horizontal_margin"
@@ -96,7 +96,7 @@
             android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
             android:focusable="true"
-            android:src="@drawable/ic_shuffle_white_24dp" />
+            app:srcCompat="@drawable/ic_shuffle_white_24dp" />
 
     </LinearLayout>
 
@@ -114,28 +114,28 @@
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_skip_previous_white_24dp" />
+            app:srcCompat="@drawable/ic_skip_previous_white_24dp" />
 
         <ImageView
             android:id="@+id/rewind"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_fast_rewind_white_24dp" />
+            app:srcCompat="@drawable/ic_fast_rewind_white_24dp" />
 
         <ImageView
             android:id="@+id/forward"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_fast_forward_white_24dp" />
+            app:srcCompat="@drawable/ic_fast_forward_white_24dp" />
 
         <ImageView
             android:id="@+id/next"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_skip_next_white_24dp" />
+            app:srcCompat="@drawable/ic_skip_next_white_24dp" />
 
     </LinearLayout>
 
